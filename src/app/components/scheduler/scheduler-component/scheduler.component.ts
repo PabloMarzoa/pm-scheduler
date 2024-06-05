@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {ISchedulerEventModel} from "../models/scheduler.model";
 
 @Component({
   selector: 'app-scheduler',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './scheduler.component.scss'
 })
 export class SchedulerComponent {
+  @Input() events: ISchedulerEventModel[] = [];
 
 }
